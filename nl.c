@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-#define MAX_LINE_LENGTH 1024
-
 void printNumberedLines(FILE *file) {
     char line[BUFSIZ];
     int lineNumber = 1;
