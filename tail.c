@@ -57,18 +57,7 @@ int main(int argc, char *argv[]) {
         while (fgets(buffer, sizeof(buffer), file) != NULL) {
             strcpy(lines[lineCount], buffer);
             lineCount++;
-        }
-	
-	/*
-        char buffer[100];
-        char lines[num_lines][100];
-        int lineCount = 0;
-
-        while (fgets(buffer, sizeof(buffer), file) != NULL) {
-            strcpy(lines[lineCount % num_lines], buffer);
-            lineCount++;
-        }
-	*/
+    	}
 
         startLine = (lineCount > num_lines) ? (lineCount - num_lines) : 0;
 	if(num_plus)
